@@ -54,7 +54,7 @@ If you want to use Thread right now, feel free to use the web version at https:/
 ## Installation
 We recommend using a virtual environment for installing Python package dependencies.
 
-<details><summary>venv steps maybe</summary>
+<details><summary>venv steps maybe windows bash</summary>
 Got it — you want to set up a **virtual environment using Bash commands**. Here’s the exact workflow you can use on Linux or macOS (and it works in Git Bash on Windows too):
 
 ---
@@ -76,7 +76,7 @@ python -m venv venv
 
 ### 3. Activate the environment
 ```bash
-source venv/bin/activate
+source venv/scripts/activate
 ```
 - Your shell prompt should now show `(venv)` at the beginning, meaning you’re inside the virtual environment.
 
