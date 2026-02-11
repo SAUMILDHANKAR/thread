@@ -54,6 +54,66 @@ If you want to use Thread right now, feel free to use the web version at https:/
 ## Installation
 We recommend using a virtual environment for installing Python package dependencies.
 
+<details><summary>venv steps maybe</summary>
+Got it — you want to set up a **virtual environment using Bash commands**. Here’s the exact workflow you can use on Linux or macOS (and it works in Git Bash on Windows too):
+
+---
+
+### 1. Navigate to your project folder
+```bash
+cd path/to/thread
+```
+
+---
+
+### 2. Create the virtual environment
+```bash
+python -m venv venv
+```
+- This makes a folder called `venv` containing an isolated Python installation.
+
+---
+
+### 3. Activate the environment
+```bash
+source venv/bin/activate
+```
+- Your shell prompt should now show `(venv)` at the beginning, meaning you’re inside the virtual environment.
+
+---
+
+### 4. Install dependencies
+If the repo has a `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5. Verify Python version inside the venv
+```bash
+python --version
+```
+It should show `Python 3.13.4` (your system version).  
+You can also check SQLite:
+```bash
+python -m sqlite3 --version
+```
+
+---
+
+### 6. Deactivate when done
+```bash
+deactivate
+```
+
+---
+
+That’s the full Bash workflow. Once you’re inside `(venv)`, any `pip install` you run will only affect this environment, not your global Python.  
+
+Do you want me to also show you how to **freeze your environment into a `requirements.txt`** so you can lock in the exact versions you’re using for Thread? That’s often the next step after setup.
+</details>
+
 Please note: if your environment has multiple Python interpreters (e.g. `python` is for Python 2.x/3.x and `python3` is for Python 3.y, please adjust some of the commands below accordingly. For example, `pip` may be `python3 -m pip install ...` and `python main.py` may be `python3 main.py`).
 
 - Start by cloning this repository.
